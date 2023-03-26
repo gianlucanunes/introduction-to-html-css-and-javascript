@@ -1,0 +1,276 @@
+<!DOCTYPE html> <!-- esse é o tipo de documento -->
+<html lang="pt-br"> <!-- aqui inicia-se o html da página -->
+<head>
+    <meta charset="UTF-8"> <!-- utf-8 significa que a página pode conter caracteres especiais como o çedilha -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- essa meta serve para trabalhar com responsividade (responder a diferentes resoluções) -->
+    <title>MenosUm</title> <!-- é o título da página -->
+
+    <!-- criando um link para o CSS externo -->
+    <!-- basta digitar link:css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- aqui, estou criando um CSS interno -->
+    <style>
+        #otraDiv
+        {
+            width: 500px;
+            height: 300px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- titulos -->
+    <h1>titulo 1</h1>
+    <h2>titulo 2</h2>
+    <h3>titulo 3</h3>
+    <h4>titulo 4</h4>
+    <h5>titulo 5</h5>
+    <h6>titulo 6</h6>
+
+    <!-- paragrafos -->
+    <!-- para escrever um texto lorem, apenas digite lorem + o número de palavras. Exemplo: lorem50 -->
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ea at, possimus dolorum eum, hic animi iste magni culpa, illo ducimus ex esse saepe officia nulla? Reprehenderit ea debitis laudantium necessitatibus fugit est esse quasi provident iure tempora. Illum, vel pariatur nesciunt, libero, ducimus adipisci corrupti accusantium rerum enim provident omnis in dicta fuga natus facilis vitae? Eveniet porro facilis dolor maxime consequuntur in assumenda sunt molestias, impedit odio quo aliquid placeat harum quam quasi corporis nostrum debitis consectetur asperiores quidem eius. Eos ipsum laboriosam consectetur corporis fugiat ex reprehenderit magni nobis accusamus distinctio adipisci nemo, mollitia suscipit ratione velit?
+    </p>
+
+    <!-- listas -->
+    <!-- lista ordenada -->
+    <!-- ol>li*5 é um jeito de criar uma lista ordenada com 5 elementos -->
+    <h2>Lista Ordenada</h2>
+    <ol>
+        <li>item de lista</li>
+        <li>item de lista</li>
+        <li>item de lista</li>
+        <li>item de lista</li>
+        <li>item de lista</li>
+    </ol>
+
+    <!-- lista desordenada -->
+    <!-- ul>li*5 é um jeito de criar uma lista desordenada com 5 elementos -->
+    <h2>Lista Desordenada</h2>
+    <ul>
+        <li>item de lista</li>
+        <li>item de lista</li>
+        <li>item de lista</li>
+        <li>item de lista</li>
+        <li>item de lista</li>
+    </ul>
+    
+    <!-- lista de descricao -->
+    <!-- dl>dt+dd é um jeito de criar uma lista de descrição -->
+    <h2>Lista de descrição</h2>
+    <dl>
+        <dt>meu item de lista</dt>
+        <dd>descrição do meu item de lista</dd>
+    </dl>
+
+    <!-- criando uma tabela -->
+    <!-- table>thead>tr>td*4 é um jeito de criar uma tabela. cada linha é td, e cada coluna é um th. -->
+    <table>
+        <thead> <!-- cabeçalho -->
+            <tr>
+                <th>cabeçalho 1</th>
+                <th>cabeçalho 2</th>
+                <th>cabeçalho 3</th>
+                <th>cabeçalho 4</th>
+            </tr>
+        </thead>
+        <tbody> <!-- corpo da tabela -->
+            <tr>
+                <td>linha 1</td>
+                <td>linha 1</td>
+                <td>linha 1</td>
+                <td>linha 1</td>
+            </tr>
+            <tr>
+                <td>linha 2</td>
+                <td>linha 2</td>
+                <td>linha 2</td>
+                <td>linha 2</td>
+            </tr>
+            <tr>
+                <td>linha 3</td>
+                <td>linha 3</td>
+                <td>linha 3</td>
+                <td>linha 3</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- rodapé da tabela -->
+            <tr>
+                <td>rodapé</td>
+                <td>rodapé</td>
+                <td>rodapé</td>
+                <td>rodapé</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <!-- link: conectando este documento com outros documentos/arquivos -->
+    <br>
+    <hr>
+    <br>
+    <a href="http://www.google.com.br" target="_blank">Clique aqui para ir ao google</a>
+    <br>
+    <a href="outraPagina.html">Clique aqui para ir para a Outra Página</a>
+    <br>
+
+    <!-- trabalhando com imagem -->
+    <br>
+    <hr>
+    <img src="https://www.petz.com.br/blog/wp-content/uploads/2021/05/raca-de-gato-peludo-1280x720.jpg" alt="Imagem de um gato serval" width="300"> 
+    <!-- se eu selecionar um valor para a largura e não selecionar a altura, a imagem será redimensionada automaticamente (a mesma coisa vale para caso você defina a altura e não a largura) -->
+    <br>
+    <hr>
+    <a href="outraPagina.html" target="_blank"> <img src="img/flopa.jpg" alt="Imagem de um gato flopa" width="300" title="Outra Página"> </a>
+    <!-- imagem clicável -->
+    <br>
+    <hr>
+
+    <!-- criando um formulario -->
+    <form>
+
+        <!-- label é o título, pode ser um h1, h2 etc -->
+        <label>Contato</label>
+        <br><br>
+        <input type="text" name="nome" placeholder="Nome" required>
+        <br><br>
+        <!-- posso usar o label para que o rótulo fique do lado da caixa -->
+        <!-- <hr>
+        <br> <br>
+        <label>Nome: </label>
+        <input type="text" name="nome"> -->
+        <input type="email" name="email" placeholder="Email" required>
+        <br> <br>
+        <textarea name="message" placeholder="Mensagem:" cols="30" rows="10" required></textarea>
+        <br> <br>
+        <label>
+        <input type="checkbox" name="select" id="select">
+        Autorizo o recebimento de promoções em meu e-mail
+        </label>
+        <br> <br>
+
+
+        <!-- criando um radio para escolher uma opção quase como se fosse um checkbox -->
+        <label>Selecione a opção desejada:</label>
+        <!-- os inputs devem ter um nome igual caso você queria fazer o esquema de escolher somente uma opção. -->
+        <label for="html">
+            <br>
+            <input type="radio" name="ling_programacao" id="html" value="HTML">
+            <!-- o nome ling_programacao é um grupo de inputs, onde o usuário só pode escolher 1 opção -->
+            HTML
+        </label>
+        <label for="css">
+            <br>
+            <input type="radio" name="ling_programacao" id="css" value="CSS">
+            CSS
+        </label>
+        <label for="javascript">
+            <br>
+            <input type="radio" name="ling_programacao" id="javascript" value="JAVASCRIPT">
+            JAVASCRIPT
+        </label>
+        <br><br>
+        
+
+        <!-- criando um dropdown para escolher uma opção dentre várias -->
+        <label for="carros">Escolha um dos carros</label>
+        <select name="carros" id="carros">
+            <!-- value é o que vai ser carregado para o banco de dados -->
+            <option value="selecione">Selecione uma opção</option>
+            <option value="fusca azul">fusca azul</option>
+            <option value="chevette">chevette</option>
+            <option value="ferrari">ferrari</option>
+            <option value="carros 2">carros 2</option>
+            <option value="xj6">xj6</option>
+        </select>
+        <br><br><br>
+
+        
+        <!-- criando o botão de enviar -->
+        <input type="submit" value="Enviar">
+
+        <br><br><br>
+        <input type="button" value="Exibir um alerta" onclick="ExibirAlerta()">
+        <br>
+        <input type="button" value="Trocar cor para verde" onclick="TrocarCorVerde()">
+        <br>
+        <input type="button" value="Trocar cor para amarelo" onclick="TrocarCorAmarelo()">
+        <br>
+        <input type="button" value="Trocar cor para vermelho" onclick="TrocarCorVermelho()">
+
+    </form>
+
+
+    <!-- criando tags semânticas que são utiziladas para Search Engine Optimization (SEO)-->
+
+    <br>
+    <br>
+    <br>
+
+    <header>
+        <!-- aqui eu coloco os elementos do cabeçalho da minha página -->
+    </header>
+
+    <nav>
+        <!-- aqui eu coloco os elementos do menu de navegação da minha página -->
+    </nav>
+
+    <main>
+        <!-- aqui é onde ficam os principais conteúdos da minha página -->
+    </main>
+
+    <section>
+        <!-- aqui é como eu divido os conteúdos da minha página. posso ter várias sessões -->
+    </section>
+
+    <article>
+        <!-- cada artigo que eu escrever, eu coloco dentro dessa tag -->
+    </article>
+
+    <aside>
+        <!-- aqui eu coloco informações de uma maneira como se fosse "de lado", como uma citação de algo ou referência -->
+    </aside>
+
+
+    <!-- criando um container / usando CSS de 3 formas diferentes -->
+    <div id="meuID" style="width: 500px; height: 300px; background-color:red;">
+        <h1>Essa é uma div usando CSS inline</h1>
+        <br><br>
+        <p>Essa prática não é recomendada pela W3C!</p>
+    </div>
+
+    <div id="otraDiv">
+        <h1>Essa é uma div usando CSS interno</h1>
+        <br><br>
+        <p>Essa prática não é recomendada pela W3C!</p>
+    </div>
+
+    <div id="otraDiv">
+        <h1>Essa é uma div usando CSS interno e com o mesmo ID da div anterior</h1>
+        <br><br>
+        <p>Essa prática não é recomendada pela W3C!</p>
+    </div>
+
+    <div id="certoDiv">
+        <h1>Essa é uma div usando CSS externo</h1>
+        <br><br>
+        <p>Essa prática é reocmendada pela W3C!</p>
+    </div>
+
+
+    <!-- criando o rodapé da página -->
+    <footer>
+        <!-- aqui é onde eu coloco o copyright do site0. além disso, eu posso colocar o mapa do site, para que eu possa navegar por ele facilmente -->
+        <p>&copy; Todos os direitos reservados 2023 </p>
+    </footer>
+
+<!-- Para linkar um script, coloque-o no final da tag body, pois o site precisa carregar por completo antes de realizar um script. -->
+<script src="script/script.js"></script>
+</body>
+</html>

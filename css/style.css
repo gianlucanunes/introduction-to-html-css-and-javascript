@@ -1,0 +1,21 @@
+/* criando a estrutura de fonte */
+@font-face {
+    font-family:'Poppins-Light';
+    /* aqui eu uso .. para abrir a pasta root do meu projeto */
+    src: url(../font/Poppins-Light.otf);
+}
+
+
+/* adicionado as propriedades de um ID da minha página */
+#certoDiv {
+    width: 500px;
+    height: 300px;
+    background-color: purple;
+    color: white;
+}
+
+
+/* uso a tag html para englobar a página toda. Existe um método mais fácil de fazer isso. */
+html {
+    font-family:'Poppins-Light';
+}
